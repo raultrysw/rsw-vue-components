@@ -1,3 +1,11 @@
+> Todos los componentes de esta libreriaa usan ed-grid
+y tienen el prefijo rsw asi que pra importarlos hay que
+ponerlo, por ejemplo
+
+```js
+import {rswForm} from 'rsw-header';
+```
+
 # Componentes de ventana de escritorio
 ## WindowControlsBar
 Componente que tiene tres botones:
