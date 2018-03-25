@@ -1,0 +1,19 @@
+{
+  "name": "rsw-vue-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ed-grid": "^2.1.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7"
+  }
+}
