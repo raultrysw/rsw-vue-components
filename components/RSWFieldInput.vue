@@ -1,15 +1,17 @@
 <template>
-  <label class="ylt-field">
+  <label class="rsw-field">
     <span>{{text}}</span>
-    <select name="field" id="" v-if="list">
-      <option v-for="(item, index) in list" :key="index" :value="index">{{item}}</option>
-    </select>
-    <input v-else :name="fieldName" @change="$emit('input')" type="text" :placeholder="description" />
+    <input @change="(e) => $emit('input', e.target.value)" :name="name" :type="type" :placeholder="description" />
   </label>
 </template>
 <script>
 export default {
   name: 'rsw-field-input',
-  props: ['text', 'list', 'description', 'fieldName']
+  props: ['text', 'description', 'type', 'name']
 }
 </script>
+<style>
+.rsw-field {
+  display: block;
+}
+</style>
